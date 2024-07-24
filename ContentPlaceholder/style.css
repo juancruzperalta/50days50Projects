@@ -1,0 +1,95 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: rgb(227, 231, 231);
+}
+
+.card-container {
+  width: 350px;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.329);
+}
+.card-image {
+  width: 350px;
+  height: 200px;
+}
+.card-image img {
+  width: 350px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  height: 200px;
+}
+.comments {
+  padding: 2rem;
+  width: 300px;
+}
+.comments p {
+  color: rgb(81, 83, 83);
+}
+.comments span {
+  display: block;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 0.5rem;
+}
+.author {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.card-image-author,
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.author p {
+  color: black;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  width: 100px;
+}
+.author small {
+  color: rgb(81, 83, 83);
+}
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: background 2s linear infinite;
+}
+.animated-bg-text {
+  background-color: #f6f7f8;
+  display: inline-block;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+}
+@keyframes background {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: -150% 0%;
+  }
+}

@@ -1,0 +1,27 @@
+html,
+body {
+  background-color: #a154df;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+div {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1.4rem;
+  color: white;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  border-radius: 0.25rem;
+  border: 0;
+  background-color: rebeccapurple;
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: rgba(102, 51, 153, 0.603);
+}

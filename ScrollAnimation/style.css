@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #efedd6;
+  font-family: sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+#contentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#box {
+  margin: 1rem;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: white;
+  justify-content: center;
+  background-color: steelblue;
+  border-radius: 0.5rem;
+
+  transition: transform 0.7s ease;
+}
+#box:nth-child(n + 4):nth-child(-n + 10) {
+  transform: translateX(-1000px);
+}
+.active {
+  transform: translateX(0px) !important;
+}

@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(70, 128, 184);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+* {
+  box-sizing: border-box;
+}
+.empty {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  outline: 4px solid black;
+}
+.fill {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.fondoBlack {
+  background-color: black;
+  outline: 4px dashed white;
+}

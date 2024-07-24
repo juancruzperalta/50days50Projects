@@ -1,0 +1,47 @@
+html,
+body {
+  min-height: 100vh;
+  background-color: #686de0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.dadJokes {
+  background-color: white;
+  width: 800px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 2px 8px 8px 2px rgb(0, 0, 0, 0.4);
+  align-items: center;
+}
+.pDadJokes {
+  text-align: center;
+  color: gray;
+  margin: 2rem;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.btnJokes {
+  width: 220px;
+  height: 40px;
+  border-radius: 0.35rem;
+  border: 0;
+  background-color: blueviolet;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+}
+.textDadJokes {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  max-width: 80%;
+  height: 140px;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}

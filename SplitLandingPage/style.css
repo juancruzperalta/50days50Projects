@@ -1,0 +1,84 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+.split {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+
+  transition: all 0.7s ease-in-out;
+}
+#left {
+  background: url("https://50projects50days.com/projects/split-landing-page/ps.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+}
+#right {
+  background: url("https://50projects50days.com/projects/split-landing-page/xbox.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0;
+}
+#left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(87, 84, 236, 0.589);
+  z-index: 2;
+}
+#right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.8);
+  z-index: 2;
+}
+.titular {
+  font-size: 3.5rem;
+  color: white;
+  z-index: 3;
+  margin-bottom: 1rem;
+}
+.btn {
+  border: 4px solid white;
+  width: 250px;
+  height: 70px;
+  background-color: transparent;
+  z-index: 3;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.btn-left:hover {
+  background-color: rgb(87, 84, 236);
+  border: 0;
+}
+.btn-right:hover {
+  background-color: rgb(15, 88, 1);
+  border: 0;
+}
+
+.split-hover {
+  width: 70%;
+}
+.split-other {
+  width: 30%;
+}

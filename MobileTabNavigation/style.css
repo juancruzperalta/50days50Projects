@@ -1,0 +1,84 @@
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(179, 78, 179);
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 340px;
+  height: 600px;
+  outline: 3px solid rgb(248, 245, 245);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.panel-image img {
+  width: 340px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 1rem;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.content {
+  opacity: 0;
+}
+.activeImage {
+  opacity: 1;
+}
+.tools-bottom {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  border-radius: 0 0 0.5rem 0.5rem;
+  height: 55px;
+}
+.tools-ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.tools {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+.tools small {
+  font-size: 0.8rem;
+  color: rgb(185, 182, 182);
+}
+.tools svg {
+  width: 16px;
+  height: 16px;
+  fill: rgb(185, 182, 182);
+}
+
+.tools:hover small {
+  color: #8e44ad;
+}
+.tools:hover svg {
+  fill: #8e44ad;
+}
+
+.tools.active small,
+.tools.active svg {
+  color: #8e44ad;
+  fill: #8e44ad;
+}

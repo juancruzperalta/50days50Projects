@@ -1,0 +1,92 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 32% 1fr;
+}
+#slider-right div {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+#slider-right div.active {
+  opacity: 1;
+}
+
+#left-slides {
+  height: 100vh;
+  background-color: rgb(255, 182, 87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#left-slides div {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+#left-slides div.activeLeft {
+  opacity: 1;
+  transform: translateY(0);
+}
+h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+p {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+#slider-buttons {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  left: 24.5%;
+  height: 100px;
+  width: 100px;
+}
+#arrowUp {
+  position: relative;
+  left: 50%;
+  right: 30%;
+  top: -35%;
+  padding: 0.8rem;
+  fill: rgb(196, 193, 193);
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+#arrowUp svg,
+#arrowDown svg {
+  width: 20px;
+  height: 20px;
+}
+#arrowDown {
+  top: 15%;
+  position: relative;
+  left: 55%;
+  right: 30%;
+  padding: 0.8rem;
+  fill: rgb(196, 193, 193);
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 0;
+  cursor: pointer;
+}
+
+#arrowUp:hover,
+#arrowDown:hover {
+  fill: rgb(66, 66, 66);
+}

@@ -1,0 +1,26 @@
+body,
+html {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(22, 22, 22);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  width: 400px;
+  height: auto;
+}
+
+.square {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(49, 49, 49, 0.61);
+}
+.colorTransition {
+  transition: all 0.3s ease-in-out;
+}

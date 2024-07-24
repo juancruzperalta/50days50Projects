@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+.hero-nav {
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(41, 40, 40);
+  justify-content: space-between;
+  font-weight: 550;
+  color: white;
+  z-index: 2;
+  transition: background-color 1.5s ease;
+}
+
+.hero-ul-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 2.5rem;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.hero-logo-nav {
+  transition: all 0.3s ease-in-out;
+  list-style: none;
+  padding: 2.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.hero-logo-nav:hover {
+  color: brown;
+}
+.hero-li-nav {
+  font-size: 1.2rem;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hero-li-nav.active {
+  color: brown;
+}
+.hero-li-nav:hover {
+  color: brown;
+}
+
+.hero-view {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+}
+.hero-view h1,
+.hero-view small {
+  z-index: 1;
+}
+
+.hero-view::before {
+  content: "";
+  background-color: rgba(41, 40, 40, 0.329);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+article {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+article div {
+  width: 90%;
+}
+article div span {
+  font-size: 1.6rem;
+  color: rgb(54, 53, 53);
+  font-weight: bold;
+}
+article div p {
+  font-size: 1.3rem;
+}
+.activeNew {
+  color: black;
+  background-color: white;
+}
