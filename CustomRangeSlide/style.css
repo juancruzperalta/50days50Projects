@@ -1,0 +1,42 @@
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(217, 252, 252);
+}
+h1 {
+  position: absolute;
+  top: 10px;
+}
+.container-range {
+  position: relative;
+}
+.container-range input {
+  width: 300px;
+  -webkit-appearance: none;
+  background-color: rgb(150, 45, 150);
+  border-radius: 0.8rem;
+  height: 12px;
+}
+.container-range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid rgb(150, 45, 150);
+  background-color: rgb(255, 255, 255);
+}
+#range {
+  position: absolute;
+  top: -2rem;
+  left: 0px;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: rgb(221, 213, 213);
+  width: 60px;
+  border-radius: 0.25rem;
+}
