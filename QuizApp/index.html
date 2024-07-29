@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container-quiz">
+      <div class="quiz">
+        <h1 id="question">Question</h1>
+        <ul class="quiz-item">
+          <li>
+            <input type="radio" name="answer" id="quiz_a" class="answer" />
+            <label for="quiz_a" id="text_a"></label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="quiz_b" class="answer" />
+            <label for="quiz_b" id="text_b"></label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="quiz_c" class="answer" />
+            <label for="quiz_c" id="text_c"></label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="quiz_d" class="answer" />
+            <label for="quiz_d" id="text_d"></label>
+          </li>
+        </ul>
+      </div>
+      <button id="type-submit" class="button">Submit</button>
+      <div class="result-quiz">
+        <h2>Tus respuesta correctas fueron <span class="value-resp"></span></h2>
+        <button class="button" id="type-reload">Reload</button>
+      </div>
+    </section>
+
+    <script src="js.js"></script>
+  </body>
+</html>
