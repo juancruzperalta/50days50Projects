@@ -1,0 +1,68 @@
+body,
+html {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(240, 239, 241);
+}
+
+.todo-list {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.todo-list h1 {
+  margin-top: 0;
+  font-size: 184px;
+  color: rgb(173, 139, 201);
+  text-shadow: 5px 5px rgba(184, 179, 179, 0.589);
+}
+.todo-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+#input-todo,
+.list li {
+  width: 320px;
+  border: 0;
+  border-bottom: 1px solid rgba(179, 173, 173, 0.459);
+  outline: none;
+  padding: 18px;
+  font-size: 1.3rem;
+}
+#input-todo:focus {
+  outline: auto;
+  outline-color: rgb(173, 139, 201);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.list li {
+  background-color: white;
+  text-align: left;
+}
+.list li {
+  list-style: none;
+}
+.tools-info {
+  margin-top: 1rem;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
